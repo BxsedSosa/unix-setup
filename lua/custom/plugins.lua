@@ -101,6 +101,20 @@ local plugins = {
     end
   },
   {
+    "windwp/nvim-ts-autotag",
+    ft = {
+      "tsx",
+      "html",
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact",
+    },
+    config = function ()
+      require("nvim-ts-autotag").setup()
+    end
+  },
+  {
 		"nvim-treesitter/nvim-treesitter",
 		tag = "v0.9.1",
 		opts = {
@@ -131,6 +145,15 @@ local plugins = {
     config = function()
       require "custom.configs.lint"
     end
+  },
+  {
+    "ngtuonghy/live-server-nvim",
+    event = "VeryLazy",
+    build = "LiveServerInstall",
+    config = function ()
+      require "custom.configs.live-server"
+    end
+
   },
 }
 return plugins

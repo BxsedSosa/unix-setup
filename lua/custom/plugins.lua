@@ -68,6 +68,10 @@ local plugins = {
         "javascript",
         "typescript",
         "tsx",
+        "css",
+        "http",
+        "vim",
+        "lua",
       }
       return opts
     end,

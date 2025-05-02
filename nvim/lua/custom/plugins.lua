@@ -1,5 +1,9 @@
 local plugins = {
   {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
+  {
     "ngtuonghy/live-server-nvim",
     event = "VeryLazy",
     build = "LiveServerInstall",

@@ -1,5 +1,13 @@
 local plugins = {
   {
+    "ngtuonghy/live-server-nvim",
+    event = "VeryLazy",
+    build = "LiveServerInstall",
+    config = function ()
+      require "custom.configs.live-server"
+    end
+  },
+  {
     'tzachar/local-highlight.nvim',
     config = function()
       require('local-highlight').setup()

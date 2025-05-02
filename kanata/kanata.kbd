@@ -8,20 +8,19 @@
 )
 
 (defvar
-  tap-time 200
+  tap-time 150
   hold-time 200
 )
 
 (defalias
-  a-mod (tap-hold $tap-time $hold-time a lalt)
-  s-mod (tap-hold $tap-time $hold-time s lmet)
-  d-mod (tap-hold $tap-time $hold-time d lsft)
-  f-mod (tap-hold $tap-time $hold-time f lctl)
-
-  j-mod (tap-hold $tap-time $hold-time j lctl)
-  k-mod (tap-hold $tap-time $hold-time k lsft)
-  l-mod (tap-hold $tap-time $hold-time l lmet)
-  ;-mod (tap-hold $tap-time $hold-time ; lalt)
+  a-mod (multi f24 (tap-hold $tap-time $hold-time a lalt))
+  s-mod (multi f24 (tap-hold $tap-time $hold-time s lmet))
+  d-mod (multi f24 (tap-hold $tap-time $hold-time d lsft))
+  f-mod (multi f24 (tap-hold $tap-time $hold-time f lctl))
+  j-mod (multi f24 (tap-hold $tap-time $hold-time j lctl))
+  k-mod (multi f24 (tap-hold $tap-time $hold-time k lsft))
+  l-mod (multi f24 (tap-hold $tap-time $hold-time l lmet))
+  ;-mod (multi f24 (tap-hold $tap-time $hold-time ; lalt))
 )
 
 (deflayer base

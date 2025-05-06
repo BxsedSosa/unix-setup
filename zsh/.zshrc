@@ -31,6 +31,8 @@ alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
+alias ollama="ollama run deepseek-r1:32b"
+alias peaclock="peaclock --config-dir ~/.config/peaclock"
 
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
 source <(fzf --zsh)
@@ -41,5 +43,5 @@ SAVEHIST=10000
 setopt appendhistory
 
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-  tmux attach-session -t default || tmux new-session -s default
+  tmux new-session
 fi
